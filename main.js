@@ -12,12 +12,12 @@ function startTimer()
 {
   clearInterval(timer);
   timerLeft = 10;
-  timerDisplay.innerHTML = `Time left: ${timeLeft}s`;
+  timerDisplay.innerText = `Time left: ${timeLeft}s`;
 
   timer = setInterval(() =>
   {
     timeLeft--;
-    timerDisplay.innerHTML = `Time left: ${timeLeft}s`;
+    timerDisplay.innerText = `Time left: ${timeLeft}s`;
 
     if (timeLeft <= 0)
     {
@@ -122,3 +122,5 @@ function restartQuiz()
   result.innerText = '';
   startTimer();
 }
+
+startTimer();
