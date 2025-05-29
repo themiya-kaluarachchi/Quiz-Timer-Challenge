@@ -29,3 +29,17 @@ input
   width: 100px;
   margin-top: 10px;
 }
+
+#timer
+{
+  font-weight: bold;
+  margin: 10px;
+  color: #d9534f;
+}
+
+#score
+{
+  font-weight: bold;
+  margin-top: 15px;
+  color: #5cb85c;
+}

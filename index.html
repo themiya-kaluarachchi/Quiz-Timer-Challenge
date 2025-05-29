@@ -11,12 +11,15 @@
     <h1>Quiz Timer Challenge</h1>
     <p id="question">What is 5 + 3?</p>
     <input type="number" id="answer" placeholder="Your answer">
+    <p id="timer">Time left: 10s</p>
     <br>
     <button onclick="submitWithCallback()">Submit (Callback)</button>
     <button onclick="submitWithPromise()">Submit (Promise)</button>
     <button onclick="submitWithAsync()">Submit (Async/Await)</button>
+    <button onclick="restartQuiz()">🔁 Restart</button>
 
     <p id="result"></p>
+    <p id="score">Score</p>
   </div>
 
   <script src="./main.js"></script>
