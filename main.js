@@ -118,8 +118,11 @@ function handleResult(isCorrect)
 // Restart Quiz
 function restartQuiz()
 {
+  clearInterval(timer);
+  timeLeft = 10;
   answerInput.value = '';
   result.innerText = '';
+  timerDisplay.innerText = '';
   startTimer();
 }
 
